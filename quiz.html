@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RWH Quiz – Test Your Knowledge</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+
+  <header>
+    <h1>Fun Rainwater Harvesting Quiz</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="importance.html">Importance</a></li>
+      <li><a href="methods.html">Methods</a></li>
+      <li><a href="quiz.html" class="active">Quiz</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="quiz">
+      <div class="question">
+        <p>1. What is the most common rainwater harvesting method in Nepal?</p>
+        <label><input type="radio" name="q1" value="a"> Plastic ponds</label><br>
+        <label><input type="radio" name="q1" value="b"> Rooftop collection</label><br>
+        <label><input type="radio" name="q1" value="c"> River diversion</label>
+      </div>
+
+      <div class="question">
+        <p>2. About how much rain falls annually in many parts of Nepal?</p>
+        <label><input type="radio" name="q2" value="a"> 100–500 mm</label><br>
+        <label><input type="radio" name="q2" value="b"> 1500–3000 mm</label><br>
+        <label><input type="radio" name="q2" value="c"> 5000+ mm</label>
+      </div>
+
+      <div class="question">
+        <p>3. Which season provides most of Nepal's rainfall?</p>
+        <label><input type="radio" name="q3" value="a"> Winter</label><br>
+        <label><input type="radio" name="q3" value="b"> Monsoon (June–Sep)</label><br>
+        <label><input type="radio" name="q3" value="c"> Spring</label>
+      </div>
+
+      <div class="question">
+        <p>4. Rainwater harvesting mainly helps reduce pressure on what in Kathmandu?</p>
+        <label><input type="radio" name="q4" value="a"> Groundwater</label><br>
+        <label><input type="radio" name="q4" value="b"> Ocean water</label><br>
+        <label><input type="radio" name="q4" value="c"> Imported bottled water</label>
+      </div>
+
+      <button onclick="checkQuiz()">Submit Quiz</button>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Learn • Harvest • Conserve | © 2026 Rainwater Nepal Awareness</p>
+  </footer>
+
+  <script src="assets/js/quiz.js"></script>
+
+</body>
+</html>
